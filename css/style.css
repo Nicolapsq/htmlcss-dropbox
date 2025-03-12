@@ -116,6 +116,8 @@ header ul li{
     margin: 0 1rem;
 }
 
+/* SECTION-3 */
+
 .s-3 .container{
     display: flex;
     flex-direction: column;
@@ -135,3 +137,38 @@ header ul li{
 .s-3 .container .p-img .box-large{
     flex-grow: 1;
 }
+
+.s-4 h1{
+    margin: 1rem 0;
+}
+
+/* SECTION-4 */
+
+.s-4 .container.bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.s-4 .container.bottom .row{
+    width: calc(100% / 3);
+}
+
+.s-4 .row{
+    padding: 1rem;
+}
+
+.s-4 .col{
+    border: 1px solid black;
+}
+
+.s-4 ul li{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* FOOTER */
+
