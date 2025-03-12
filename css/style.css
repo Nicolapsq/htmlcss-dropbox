@@ -63,6 +63,7 @@ header ul li{
     display: flex;
     flex-direction: column;
     background-color: #b4d0e7;
+    margin: 1rem auto;
 }
 
 .s-1 .container .p-img{
@@ -113,4 +114,24 @@ header ul li{
 .large-2{
     border: 1px solid black;
     margin: 0 1rem;
+}
+
+.s-3 .container{
+    display: flex;
+    flex-direction: column;
+    background-color: #b4d0e7;
+    margin: 1rem auto;
+}
+
+.s-3 .container .p-img{
+    display: flex;
+    justify-content: center;
+}
+
+.s-3 .container .p-img .box{
+    flex-grow: 2;
+}
+
+.s-3 .container .p-img .box-large{
+    flex-grow: 1;
 }
