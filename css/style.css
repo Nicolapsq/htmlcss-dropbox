@@ -1,0 +1,62 @@
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* UTILS */
+
+.debug,
+.debug *{
+    min-height: 50px;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.219);
+    border: 1px dashed red;
+}
+
+.container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.wrapper{
+    min-height: 100vh;  /* l'unita di misura "vh" va ad indicare una parte della finestra che visualizziamo sul monitor. 1vh è un centesimo di finestra, quindi 100vh è tutta la finestra. con il "min" avanti gli diciamo di prendere ALMENO tutta la finestra. se la pagina dovra scrollare con min-height non avremo problemi */
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .box-1{
+    display: inline-block;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+/* MAIN */
+
