@@ -57,21 +57,60 @@ header ul li{
 
 /* MAIN */
 
-main .container{
+/* SECTION-1 */
+
+.s-1 .container{
     display: flex;
     flex-direction: column;
     background-color: #b4d0e7;
 }
 
-main .container .p-img{
+.s-1 .container .p-img{
     display: flex;
     justify-content: center;
 }
 
-main .container .p-img .box{
+.s-1 .container .p-img .box{
     flex-grow: 1;
 }
 
-.box-large{
+.s-1 .container .p-img .box-large{
     flex-grow: 2;
+}
+
+/* SECTION-2 */
+
+.s-2 h1{
+    margin: 10px auto;
+
+}
+
+.s-2 ul li{
+    display: inline-block;
+    margin: 10px auto;
+
+}
+
+.s-2 .container.center{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.s-2 .container.center .row{
+    width: calc(100% / 3);
+}
+
+.s-2 .row{
+    padding: 1rem;
+}
+
+.s-2 .col{
+    border: 1px solid black;
+}
+
+.large-1,
+.large-2{
+    border: 1px solid black;
+    margin: 0 1rem;
 }
