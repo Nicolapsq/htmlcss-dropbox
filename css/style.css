@@ -9,8 +9,8 @@
 img{
     max-width: 100%;
 }
-
-/* a{
+/* 
+a{
     text-decoration: none;
 } */
 
@@ -22,273 +22,217 @@ ul{
 
 .debug,
 .debug *{
-    min-height: 150px;
+    min-height: 100px;
     padding: 5px;
     background-color: rgba(255, 0, 0, 0.219);
     border: 1px dashed red;
 }
 
-.container{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
 
+/* .wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+.row{
+    display: flex;
+}
+
+/* .container{
+    max-width: 1100px;
+    margin-left: auto;
+}*/
+
+[class*='col']{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.col-1-2{
+    width: calc(100% / 2);
+}
+
+.col-1-3{
+    width: calc(100% / 3);
+}
+
+.col-1-4{
+    width: calc(100% / 4);
+}
+
+.col-1-5{
+    width: calc(100% / 5);
+}
+
+.col-1-1{
+    width: 100%;
+}
+
+.col-60{
+    width: 60%;
+}
+
+.col-40{
+    width: 40%;
+}
+
+button{
+    padding: 5px 10px;
+    background-color: #0161fd;
+    color: white;
 }
 
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
-    padding: 5px 10px;
-    background-color: #0064ff;
-    border-color: white;
-    color: white;
-}
-
-button.bg-white{
-    background-color: white;
-    border-color: #adadad;
-    color: black;
-}
 
 /* HEADER */
 
-header .container{
-    display: flex;
-    justify-content: space-between;
+.header{
     background-color: white;
-    padding: 20px 0;
 }
 
-header .box-1{
+.header .row{
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.header li{
     display: inline-block;
-}
-header ul.special{
-    margin-right: 100px;
-}
-
-header ul li{
-    display: inline-block;
-    line-height: 100%;
-    font-size: 1.1rem;
-    padding: 0 1px;
-}
-
-.text-center{
-    text-align: center;
 }
 
 /* MAIN */
 
-main>hr{
-    padding: 4rem 0;
-    position: relative;
-    top: -1rem;
-    border-top: thin;
-}
+/* Prodotto */
 
-/* SECTION-1 */
-
-.dropbox{
+.prodotto{
     background-color: #b4d0e7;
 }
 
-.dropbox .container{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
+.prodotto .container{
+    width: 80%;
+    margin: 0 auto;
     position: relative;
-    top: 60px;
+    top: 3rem;
 }
 
-.dropbox .container .title{
-    font-size: xxx-large;
-    margin-bottom: 2rem;
+.prodotto h1{
+    font-size: 4rem;
 }
 
-.dropbox .container .p-img{
-    display: flex;
+.prodotto .row{
     justify-content: center;
+    padding-top: 2rem;
 }
 
-.dropbox .container .p-img .box{
-    flex-grow: 1;
+.prodotto .col-40 .row{
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.dropbox .container .p-img .box-large{
-    flex-grow: 2;
+/* BUSINESS */
+
+.business .container{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 5rem;
 }
 
-/* SECTION-2 */
-
-.business h1{
-    margin: 10px auto;
+.business h2{
     font-size: 2rem;
+}
 
+.business ul{
+    margin: 1rem 0;
 }
 
 .business ul li{
     display: inline-block;
-    margin: 10px auto;
-    margin-right: 0px;
 
-}
-
-.business .container.center{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.business .container.center .row{
-    width: calc(100% / 3);
-}
-
-.business .container.center .row .col ul li{
-    display: flex;
-}
-
-.business .container.center .row .col ul li button{    
-    margin: auto;
 }
 
 .business .row{
-    padding: 1rem;
+    gap: 1rem;
+
 }
 
-.business .col{
-    border: 1px solid #d9d9d9;
-    padding: 1rem;
+.business .col-1-1{
+    margin: 1rem 0;
 }
 
-.business span{
-    color: #9b989f;
+.business .col-1-3{
+    border: 1px solid #f3f3f3;
 }
 
-.col hr{
-    width: 3rem;
-    margin: 3rem 0;
-    border: 0.1px solid #d7d7d7;
-}
-
-.large-1,
-.large-2{
-    border: 1px solid #d7d7d7;
-    margin: 0 1rem;
-}
-
-.large-1{
+.business .tipo-di-business{
+    border: 1px solid #f3f3f3;
     text-align: center;
-    padding: 5px 0;
 }
 
-.large-2{
-    position: relative;
-}
 
-.container.bottom button{
-    position: absolute;
-    top: 32px;
-    right: 2rem;
+.business .box-xl{
+    border: 1px solid #f3f3f3;
+    margin: 0 -1rem;
 
 }
 
-.margin{
-    margin: 2rem;
+/* PARTNER */
+
+.partner .row{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 6rem;
+    gap: 1rem;
 }
 
-/* SECTION-3 */
-
-.partner .container{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    margin-top: 10rem;
+.partner [class*='col']{
+    padding: 0;
 }
 
-.partner .container .p-img{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
+.partner h2{
+    margin-top: 2rem;
+
 }
 
-.partner .container .p-img .box{
-    flex-grow: 1;
-    max-width: 35%;
-    margin-top: 3rem;
+.partner p{
+    margin-top: 1rem;
+
 }
 
-.partner .container .p-img .box-large{
-    flex-grow: 2;
+.partner button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 1rem;
 }
 
-.partner ul{
-    margin-left: 1rem;
-}
-/* SECTION-4 */
+/* DROPBOX-BUSINESS */
 
-.operation .container.top h1{
-    margin: 3rem;
-    font-size: xx-large;
-} 
-
-.operation h1{
+.dropbox-business h2{
+    font-size: 2rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
 }
 
-
-.operation .container.bottom{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+.dropbox-business .container{
+    width: 70%;
+    margin: auto;
 }
 
-.operation .container.bottom .row{
-    width: calc(100% / 3);
+.dropbox-business .row{
+    flex-wrap: wrap;
+    gap: 1rem;  
 }
 
-.operation .row{
-    padding: 1rem;
+.dropbox-business [class*='col']{
+    padding: 0;
 }
 
-.operation ul:last-child{
-    margin-bottom: 6rem;
-}
-
-.operation ul li{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/* FOOTER */
-
-footer{
-    background-color: black;
-    padding-top: 1rem;
-}
-
-footer .container{
-    margin-top: 5rem;
-    color: white;
-}
-
-footer .row{
-    display: flex;
-    justify-content: space-around;
-}
-
-footer hr{
-    margin: 3rem 0;
-    width: 100px;
-}
-
-footer .language{
-    padding-bottom: 3rem;
+.dropbox-business .col-1-3{
+    width: calc((100% - 2rem) / 3);
 }
