@@ -44,6 +44,14 @@ ul{
 button{
     padding: 5px 10px;
     background-color: #0064ff;
+    border-color: white;
+    color: white;
+}
+
+button.bg-white{
+    background-color: white;
+    border-color: #adadad;
+    color: black;
 }
 
 /* HEADER */
@@ -84,11 +92,11 @@ main>hr{
 
 /* SECTION-1 */
 
-.s-1{
+.dropbox{
     background-color: #b4d0e7;
 }
 
-.s-1 .container{
+.dropbox .container{
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
@@ -96,67 +104,67 @@ main>hr{
     top: 60px;
 }
 
-.s-1 .container .title{
+.dropbox .container .title{
     font-size: xxx-large;
     margin-bottom: 2rem;
 }
 
-.s-1 .container .p-img{
+.dropbox .container .p-img{
     display: flex;
     justify-content: center;
 }
 
-.s-1 .container .p-img .box{
+.dropbox .container .p-img .box{
     flex-grow: 1;
 }
 
-.s-1 .container .p-img .box-large{
+.dropbox .container .p-img .box-large{
     flex-grow: 2;
 }
 
 /* SECTION-2 */
 
-.s-2 h1{
+.business h1{
     margin: 10px auto;
     font-size: 2rem;
 
 }
 
-.s-2 ul li{
+.business ul li{
     display: inline-block;
     margin: 10px auto;
     margin-right: 0px;
 
 }
 
-.s-2 .container.center{
+.business .container.center{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.s-2 .container.center .row{
+.business .container.center .row{
     width: calc(100% / 3);
 }
 
-.s-2 .container.center .row .col ul li{
+.business .container.center .row .col ul li{
     display: flex;
 }
 
-.s-2 .container.center .row .col ul li button{    
+.business .container.center .row .col ul li button{    
     margin: auto;
 }
 
-.s-2 .row{
+.business .row{
     padding: 1rem;
 }
 
-.s-2 .col{
+.business .col{
     border: 1px solid #d9d9d9;
     padding: 1rem;
 }
 
-.s-2 span{
+.business span{
     color: #9b989f;
 }
 
@@ -177,53 +185,81 @@ main>hr{
     padding: 5px 0;
 }
 
+.large-2{
+    position: relative;
+}
+
+.container.bottom button{
+    position: absolute;
+    top: 32px;
+    right: 2rem;
+
+}
+
+.margin{
+    margin: 2rem;
+}
+
 /* SECTION-3 */
 
-.s-3 .container{
+.partner .container{
     display: flex;
     flex-direction: column;
-    background-color: #b4d0e7;
     margin: 1rem auto;
+    margin-top: 10rem;
 }
 
-.s-3 .container .p-img{
+.partner .container .p-img{
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
 }
 
-.s-3 .container .p-img .box{
+.partner .container .p-img .box{
+    flex-grow: 1;
+    max-width: 35%;
+    margin-top: 3rem;
+}
+
+.partner .container .p-img .box-large{
     flex-grow: 2;
 }
 
-.s-3 .container .p-img .box-large{
-    flex-grow: 1;
+.partner ul{
+    margin-left: 1rem;
 }
-
-.s-4 h1{
-    margin: 1rem 0;
-}
-
 /* SECTION-4 */
 
-.s-4 .container.bottom{
+.operation .container.top h1{
+    margin: 3rem;
+    font-size: xx-large;
+} 
+
+.operation h1{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+
+.operation .container.bottom{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.s-4 .container.bottom .row{
+.operation .container.bottom .row{
     width: calc(100% / 3);
 }
 
-.s-4 .row{
+.operation .row{
     padding: 1rem;
 }
 
-.s-4 .col{
-    border: 1px solid black;
+.operation ul:last-child{
+    margin-bottom: 6rem;
 }
 
-.s-4 ul li{
+.operation ul li{
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -233,15 +269,26 @@ main>hr{
 
 /* FOOTER */
 
+footer{
+    background-color: black;
+    padding-top: 1rem;
+}
+
 footer .container{
+    margin-top: 5rem;
+    color: white;
+}
+
+footer .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 footer hr{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 3rem 0;
+    width: 100px;
+}
+
+footer .language{
+    padding-bottom: 3rem;
 }
