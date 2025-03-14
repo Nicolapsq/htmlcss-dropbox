@@ -12,18 +12,22 @@
     <header>
         <div class="header">
             <div class="row">
-                <ul>
-                    <li>logo</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                </ul>
-                <ul>
-                    <li>logo</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li><button>button</button></li>
-                </ul>
+                <div class="col">
+                    <div class="row">
+                        <div class="col"><img src="./css/img/logo-small.png" alt=""></div>
+                        <div class="col"><a href="#">Perchè Dropbox</a></div>
+                        <div class="col"><a href="#">Funzioni</a></div>
+                        <div class="col"><a href="#">Piani e Prezzi</a></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col"><a href="">Supporto</a></div>
+                        <div class="col"><a href="">Contatta l'ufficio vendite</a></div>
+                        <div class="col"><a href="">Accedi</a></div>
+                        <div class="col"><button>Inizia</button></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -35,9 +39,11 @@
                     <div class="col-40">
                         <div class="row">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas inventore quaerat quam vel illum quisquam corrupti ea molestias, nobis vitae praesentium, ad, at voluptatibus sunt suscipit pariatur sint. Iure!</p>
+                            <br>
                             <button>bottone</button>
+                            <br>
                             <div>testo</div>
-                            <i>icona freccia</i>
+                            <i class="fa-solid fa-arrow-down">freccia</i>
                         </div>
                     </div>
                     <div class="col-60">
@@ -50,22 +56,89 @@
             <div class="container">
                 <h2>Trova il piano business che fa per te</h2>
                 <ul>
-                    <li><input type="radio"> Fatturazione mensile</li>
-                    <li><input type="radio"> Fatturazione annuale</li>
+                    <li><input type="radio" name="scelta"> Fatturazione mensile</li>
+                    <li><input type="radio" name="scelta"> Fatturazione annuale</li>
                 </ul>
                 <div class="row">
                     <div class="col-1-3">
-                        <div class="box">
                             <div class="tipo-di-business">
-                                Singolo
+                                <i class="fa-solid fa-user">Singolo</i>
                             </div>
                             <div class="spiegazione">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
+                                <div class="row">
+                                    <div class="col"><h3>Professional</h3></div>
+                                    <div class="col"><h4>€ 12.00</h4></div>
+                                    <div class="col grey">/mese</div>
+                                    <br>
+                                    <div class="col">1 utente</div>
+                                    <div class="col">5 TB di spazio di archiviazione sicuro</div>
+                                    <div class="col">Funzioni di produttività preminum e condivisione file semplice e sicura</div>
+                                    <br>
+                                    <div class="col"><button>Prova gratis per 30 giorni</button></div>
+                                    <div class="col">oppure <a href="">acquista ora</a></div>
+                                    <br>
+                                    <div class="col hr"></div>
+                                    <br>
+                                    <div class="col"><h4>Punti salienti del piano</h4></div>
+                                    <div class="col">Invia file fino a 100GB con Dropbox Transfert</div>
+                                    <div class="col">Cartelle offline su dispositivi mobili</div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-1-3">
+                        <div class="tipo-di-business">
+                            <i class="fa-solid fa-user">Singolo</i>
+                        </div>
+                        <div class="spiegazione">
+                            <div class="row">
+                                <div class="col"><h3>Professional</h3></div>
+                                <div class="col"><h4>€ 12.00</h4></div>
+                                <div class="col grey">/mese</div>
+                                <br>
+                                <div class="col">1 utente</div>
+                                <div class="col">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="col">Funzioni di produttività preminum e condivisione file semplice e sicura</div>
+                                <br>
+                                <div class="col"><button>Prova gratis per 30 giorni</button></div>
+                                <div class="col">oppure <a href="">acquista ora</a></div>
+                                <br>
+                                <div class="col hr"></div>
+                                <br>
+                                <div class="col"><h4>Punti salienti del piano</h4></div>
+                                <div class="col">Invia file fino a 100GB con Dropbox Transfert</div>
+                                <div class="col">Cartelle offline su dispositivi mobili</div>
+                                <div class="col">Cartelle offline su dispositivi mobili</div>
+                                <div class="col">Cartelle offline su dispositivi mobili</div>
+                                <div class="col">Cartelle offline su dispositivi mobili</div>
+                                <div class="col">Cartelle offline su dispositivi mobili</div>
                             </div>
                         </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="tipo-di-business">
+                        <i class="fa-solid fa-user">Singolo</i>
                     </div>
-                    <div class="col-1-3">testo</div>
-                    <div class="col-1-3">testo</div>
+                    <div class="spiegazione">
+                        <div class="row">
+                            <div class="col"><h3>Professional</h3></div>
+                            <div class="col"><h4>€ 12.00</h4></div>
+                            <div class="col grey">/mese</div>
+                            <br>
+                            <div class="col">1 utente</div>
+                            <div class="col">5 TB di spazio di archiviazione sicuro</div>
+                            <div class="col">Funzioni di produttività preminum e condivisione file semplice e sicura</div>
+                            <br>
+                            <div class="col"><button>Prova gratis per 30 giorni</button></div>
+                            <div class="col">oppure <a href="">acquista ora</a></div>
+                            <br>
+                            <div class="col hr"></div>
+                            <br>
+                            <div class="col"><h4>Punti salienti del piano</h4></div>
+                            <div class="col">Invia file fino a 100GB con Dropbox Transfert</div>
+                            <div class="col">Cartelle offline su dispositivi mobili</div>
+                        </div>
+                    </div>
+            </div>
                 </div>
                 <div class="col-1-1">
                     <div class="box-xl">
@@ -73,7 +146,11 @@
                             Team
                         </div>
                         <div class="spiegazione">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint alias architecto mollitia quibusdam voluptatibus earum molestias pariatur, veniam, sapiente facilis laudantium obcaecati saepe ratione odio nihil commodi amet illo libero.
+                            <h3>Enterprice</h3>
+                            <br>
+                            <h4>Contatta l'ufficio vendite per i prezzi</h4>
+                            <button>Contatta l'ufficio vendite</button>
+                            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, dicta nesciunt? Nulla odio hic reprehenderit recusandae, quisquam fugit nemo error enim incidunt iure, asperiores sunt perferendis earum aspernatur, tempore consequatur.</div>
                         </div>
                     </div>
                 </div>
@@ -100,6 +177,7 @@
                             <img src="./css/img/business-feature-switching-tools.png" alt="">
                         </div>
                         <h3>testo</h3>
+                        <br>
                         <div class="spiegazione">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
                         </div>
@@ -109,6 +187,7 @@
                             <img src="./css/img/business-feature-send-files-it.png" alt="">
                         </div>
                         <h3>testo</h3>
+                        <br>
                         <div class="spiegazione">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
                         </div>
@@ -118,6 +197,7 @@
                             <img src="./css/img/business-feature-coordinate-it.png" alt="">
                         </div>
                         <h3>testo</h3>
+                        <br>
                         <div class="spiegazione">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
                         </div>
@@ -127,6 +207,7 @@
                             <img src="./css/img/business-feature-integrations-it.png" alt="">
                         </div>
                         <h3>testo</h3>
+                        <br>
                         <div class="spiegazione">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
                         </div>
@@ -136,6 +217,7 @@
                             <img src="./css/img/business-feature-multi-device.png" alt="">
                         </div>
                         <h3>testo</h3>
+                        <br>
                         <div class="spiegazione">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
                         </div>
@@ -145,6 +227,7 @@
                             <img src="./css/img/business-feature-security.png" alt="">
                         </div>
                         <h3>testo</h3>
+                        <br>
                         <div class="spiegazione">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia dolores necessitatibus error accusamus iste. Commodi atque molestiae aliquid, deleniti quam modi adipisci neque! Fugit nesciunt cupiditate vitae? Officiis, quae.
                         </div>
@@ -156,6 +239,70 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col"><h3>Dropbox</h3></div>
+                            <br>
+                            <div class="col">Applicazione desktop</div>
+                            <div class="col">Perchè Dropbox</div>
+                            <div class="col">Piani</div>
+                            <div class="col">Sicurezza</div>
+                            <div class="col">Funzioni</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col"><h3>Dropbox</h3></div>
+                            <br>
+                            <div class="col">Applicazione desktop</div>
+                            <div class="col">Perchè Dropbox</div>
+                            <div class="col">Piani</div>
+                            <div class="col">Sicurezza</div>
+                            <div class="col">Funzioni</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col"><h3>Dropbox</h3></div>
+                            <br>
+                            <div class="col">Applicazione desktop</div>
+                            <div class="col">Perchè Dropbox</div>
+                            <div class="col">Piani</div>
+                            <div class="col">Sicurezza</div>
+                            <div class="col">Funzioni</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col"><h3>Dropbox</h3></div>
+                            <br>
+                            <div class="col">Applicazione desktop</div>
+                            <div class="col">Perchè Dropbox</div>
+                            <div class="col">Piani</div>
+                            <div class="col">Sicurezza</div>
+                            <div class="col">Funzioni</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col"><h3>Dropbox</h3></div>
+                            <br>
+                            <div class="col">Applicazione desktop</div>
+                            <div class="col">Perchè Dropbox</div>
+                            <div class="col">Piani</div>
+                            <div class="col">Sicurezza</div>
+                            <div class="col">Funzioni</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="language">Italiano</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
