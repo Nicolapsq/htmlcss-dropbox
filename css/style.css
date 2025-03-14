@@ -158,6 +158,10 @@ button{
     align-items: flex-start;
 }
 
+.prodotto i{
+    font-size: xx-large;
+}
+
 /* BUSINESS */
 
 .business .container{
@@ -338,8 +342,7 @@ footer{
     margin: 1rem 0;
 }
 
-.footer .language{
+.footer span{
     position: relative;
-    left: 20px;
-    padding: 2rem 0;
+    left: 1rem;
 }
